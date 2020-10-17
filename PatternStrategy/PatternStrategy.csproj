@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="Behaviors\Fly\CanFly.cs" />
     <Compile Include="Behaviors\Fly\CantFly.cs" />
-    <Compile Include="Behaviors\Fly\Class1.cs" />
     <Compile Include="Behaviors\Fly\FlyWithRocketPower.cs" />
     <Compile Include="Behaviors\Interface\IFLy.cs" />
     <Compile Include="Behaviors\Interface\IQuack.cs" />
