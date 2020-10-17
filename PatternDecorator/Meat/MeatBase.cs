@@ -2,11 +2,11 @@
 {
     public abstract class MeatBase
     {
-        private readonly MeatBase _measts;
+        private readonly MeatBase _meats;
 
         protected MeatBase(string name, MeatBase meats)
         {
-            _measts = meats;
+            _meats = meats;
             Name = name;
         }
 
@@ -19,7 +19,7 @@
 
         public decimal Price()
         {
-            return GetPrice() + (_measts?.Price() ?? 0);
+            return GetPrice() + (_meats?.Price() ?? 0);
         }
 
         protected abstract decimal GetPrice();
