@@ -1,0 +1,5 @@
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternIterator\bin\Debug\PatternIterator.dll
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternIterator\bin\Debug\PatternIterator.pdb
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternIterator\obj\Debug\PatternIterator.csprojAssemblyReference.cache
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternIterator\obj\Debug\PatternIterator.dll
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternIterator\obj\Debug\PatternIterator.pdb

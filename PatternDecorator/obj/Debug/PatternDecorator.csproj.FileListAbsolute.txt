@@ -1,0 +1,5 @@
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternDecorator\bin\Debug\PatternDecorator.dll
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternDecorator\bin\Debug\PatternDecorator.pdb
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternDecorator\obj\Debug\PatternDecorator.csprojAssemblyReference.cache
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternDecorator\obj\Debug\PatternDecorator.dll
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternDecorator\obj\Debug\PatternDecorator.pdb

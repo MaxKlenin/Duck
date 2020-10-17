@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47C0A55D-009B-4CC9-96D0-E365767A4AD4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PatternStrategy</RootNamespace>
+    <AssemblyName>PatternStrategy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behaviors\Fly\CanFly.cs" />
+    <Compile Include="Behaviors\Fly\CantFly.cs" />
+    <Compile Include="Behaviors\Fly\Class1.cs" />
+    <Compile Include="Behaviors\Fly\FlyWithRocketPower.cs" />
+    <Compile Include="Behaviors\Interface\IFLy.cs" />
+    <Compile Include="Behaviors\Interface\IQuack.cs" />
+    <Compile Include="Behaviors\Interface\ISwim.cs" />
+    <Compile Include="Behaviors\Interface\Iwalk.cs" />
+    <Compile Include="Behaviors\Quack\CanQuack.cs" />
+    <Compile Include="Behaviors\Quack\CantQuack.cs" />
+    <Compile Include="Behaviors\Swim\CanSwim.cs" />
+    <Compile Include="Behaviors\Swim\CantSwim.cs" />
+    <Compile Include="Behaviors\Walk\CantWalk.cs" />
+    <Compile Include="Behaviors\Walk\CanWalk.cs" />
+    <Compile Include="DuckType\BaseDuck.cs" />
+    <Compile Include="DuckType\DefaultDuck.cs" />
+    <Compile Include="DuckType\JetPackDuck.cs" />
+    <Compile Include="DuckType\WoodDuck.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

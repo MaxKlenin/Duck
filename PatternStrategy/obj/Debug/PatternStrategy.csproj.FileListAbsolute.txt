@@ -1,0 +1,5 @@
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternStrategy\bin\Debug\PatternStrategy.dll
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternStrategy\bin\Debug\PatternStrategy.pdb
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternStrategy\obj\Debug\PatternStrategy.csprojAssemblyReference.cache
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternStrategy\obj\Debug\PatternStrategy.dll
+C:\Users\Max\source\repos\SecondGrade\Ducks\PatternStrategy\obj\Debug\PatternStrategy.pdb
