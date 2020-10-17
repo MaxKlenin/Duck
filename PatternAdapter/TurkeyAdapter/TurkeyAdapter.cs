@@ -5,34 +5,39 @@ namespace PatternAdapter.TurkeyAdapter
 {
     public class TurkeyAdapter : BaseDuck
     {
-        BaseTurkey turkey; 
+        private readonly BaseTurkey _turkey; 
+
         public TurkeyAdapter(BaseTurkey turkey)
-            : base () 
         {
-            this.turkey = turkey;
+            _turkey = turkey;
         }
+
         public override void MakeQuack()
         {
-            turkey.MakeGobble();
+            _turkey.MakeGobble();
         }
+
         public override void MakeFly()
         {
-            turkey.MakeFly();
+            _turkey.MakeFly();
         }
+
         public override void MakeWalk()
         {
-            turkey.MakeWalk();
+            _turkey.MakeWalk();
         }
+
         public override void MakeSwim()
         {
-            turkey.MakeSwim();
+            _turkey.MakeSwim();
         }
+
         public override void ShowInfo()
         {
-            turkey.MakeFly();
-            turkey.MakeGobble();
-            turkey.MakeSwim();
-            turkey.MakeWalk();
+            _turkey.MakeFly();
+            _turkey.MakeGobble();
+            _turkey.MakeSwim();
+            _turkey.MakeWalk();
         }
     }
 }

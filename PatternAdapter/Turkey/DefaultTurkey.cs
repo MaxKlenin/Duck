@@ -7,9 +7,11 @@ namespace PatternAdapter.Turkey
 {   
    public class DefaultTurkey : BaseTurkey
    {
+
        public DefaultTurkey() : base(new CanFly(), new CanGobble(), new CanSwim(), new CanWalk ())
        {
 
        }
+
    }
 }
