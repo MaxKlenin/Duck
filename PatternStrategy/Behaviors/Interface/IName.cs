@@ -1,7 +1,7 @@
 ﻿namespace PatternStrategy.Behaviors.Interface
 {
-    public interface IFly
+    public interface IName
     {
-        void Fly();
+        void Name();
     }
 }

@@ -45,9 +45,13 @@
     <Compile Include="Behaviors\Fly\CantFly.cs" />
     <Compile Include="Behaviors\Fly\FlyWithRocketPower.cs" />
     <Compile Include="Behaviors\Interface\IFLy.cs" />
+    <Compile Include="Behaviors\Interface\IName.cs" />
     <Compile Include="Behaviors\Interface\IQuack.cs" />
     <Compile Include="Behaviors\Interface\ISwim.cs" />
     <Compile Include="Behaviors\Interface\Iwalk.cs" />
+    <Compile Include="Behaviors\Name\DefaultName.cs.cs" />
+    <Compile Include="Behaviors\Name\RobotName.cs" />
+    <Compile Include="Behaviors\Name\WoodName.cs" />
     <Compile Include="Behaviors\Quack\CanQuack.cs" />
     <Compile Include="Behaviors\Quack\CantQuack.cs" />
     <Compile Include="Behaviors\Swim\CanSwim.cs" />

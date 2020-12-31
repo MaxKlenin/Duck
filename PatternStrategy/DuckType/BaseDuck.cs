@@ -8,17 +8,19 @@ namespace PatternStrategy.DuckType
         private readonly IQuack _quack;
         private readonly ISwim _swim;
         private readonly IWalk _walk;
+        private readonly IName _name;
 
         protected BaseDuck()
         {
         }
 
-        protected BaseDuck(IFly fly, IQuack quack, ISwim swim, IWalk walk)
+        protected BaseDuck(IFly fly, IQuack quack, ISwim swim, IWalk walk, IName name)
         {
             _fly = fly;
             _quack = quack;
             _swim = swim;
             _walk = walk;
+            _name = name;
         }
 
         public virtual void MakeFly()
@@ -41,12 +43,18 @@ namespace PatternStrategy.DuckType
             _walk.Walk();
         }
 
+        public virtual void ShowName()
+        {
+            _name.Name();
+        }
+
         public virtual void ShowInfo()
         {
             _fly.Fly();
             _quack.Quack();
             _swim.Swim();
             _walk.Walk();
+            _name.Name();
         }
     }
 }
