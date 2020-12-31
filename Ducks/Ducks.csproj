@@ -89,6 +89,10 @@
       <Project>{35ffc4c3-6999-4d2d-b408-8662fba7add4}</Project>
       <Name>PatternIterator</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PatternSingleton\PatternSingleton.csproj">
+      <Project>{8b0fb22f-347a-4a71-914f-2388d64f4654}</Project>
+      <Name>PatternSingleton</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PatternStrategy\PatternStrategy.csproj">
       <Project>{47c0a55d-009b-4cc9-96d0-e365767a4ad4}</Project>
       <Name>PatternStrategy</Name>

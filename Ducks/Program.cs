@@ -7,6 +7,7 @@ using PatternStrategy.DuckType;
 using PatternDecorator.Meat;
 using PatternDecorator.MeatType;
 using PatternDecorator.Topping;
+using PatternSingleton;
 
 namespace Ducks
 {
@@ -17,15 +18,15 @@ namespace Ducks
             Console.WriteLine("**** Wood Duck ****");
             var woodDuck = new WoodDuck();
             woodDuck.ShowInfo();
-           
+
             Console.WriteLine("**** Jet Pack Duck ****");
             var robotDuck = new JetPackDuck();
             robotDuck.ShowInfo();
-           
+
             Console.WriteLine("**** Default Duck ****");
             var defaultDuck = new DefaultDuck();
             defaultDuck.ShowInfo();
-           
+
             Console.WriteLine("**** Turkey Before adapter ****");
             var turkey = new DefaultTurkey();
             turkey.ShowInfo();
@@ -34,10 +35,10 @@ namespace Ducks
             var turkeyAdapted = new TurkeyAdapter(turkey);
             turkeyAdapted.ShowInfo();
             turkeyAdapted.MakeQuack();
-           
+
             var demonDuckmenu = new DemonDucksMenu();
             var hollyDucksMenu = new HollyDucksMenu();
-            var waitress = new Waitress(demonDuckmenu,hollyDucksMenu);
+            var waitress = new Waitress(demonDuckmenu, hollyDucksMenu);
             waitress.PrintMenu();
 
             MeatBase grillDuck = new GrillDuck();
@@ -45,10 +46,18 @@ namespace Ducks
             grillDuck = new GrillVegetables(grillDuck);
             Console.WriteLine($"Name:{grillDuck.Name}\n Count:{grillDuck.Price()}");
             MeatBase grillTurkey = new GrillTurkey();
-            grillTurkey = new ExtraCheese(grillTurkey);          
+            grillTurkey = new ExtraCheese(grillTurkey);
             Console.WriteLine($"Name:{grillTurkey.Name}\n Count:{grillTurkey.Price()}");
 
+            Console.WriteLine("**** DUCK FABRIC ****");
 
+            var single = Singleton.getInstance();
+            //Pack duck: choose duck and ducks count
+            single.PackDuck(woodDuck, 13);
+            single.PackDuck(defaultDuck, 6);
+            single.PackDuck(robotDuck, 46);
+            single.PackDuck(turkeyAdapted, 6);
+            single.PackDuck(woodDuck, 14);// exept test 
         }
     }
 }
