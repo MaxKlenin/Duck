@@ -45,8 +45,10 @@
     <Compile Include="Behaviors\Gobble\CanGobble.cs" />
     <Compile Include="Behaviors\Interface\IFly.cs" />
     <Compile Include="Behaviors\Interface\IGobble.cs" />
+    <Compile Include="Behaviors\Interface\IName.cs" />
     <Compile Include="Behaviors\Interface\ISwim.cs" />
     <Compile Include="Behaviors\Interface\IWalk.cs" />
+    <Compile Include="Behaviors\Name\DefaultName.cs.cs" />
     <Compile Include="Behaviors\Swim\CanSwim.cs" />
     <Compile Include="Behaviors\Walk\CanWalk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

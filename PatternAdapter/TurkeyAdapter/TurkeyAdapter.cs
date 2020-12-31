@@ -32,12 +32,18 @@ namespace PatternAdapter.TurkeyAdapter
             _turkey.MakeSwim();
         }
 
+        public override void ShowName()
+        {
+            _turkey.ShowName();
+        }
+
         public override void ShowInfo()
         {
             _turkey.MakeFly();
             _turkey.MakeGobble();
             _turkey.MakeSwim();
             _turkey.MakeWalk();
+            _turkey.ShowName();
         }
     }
 }

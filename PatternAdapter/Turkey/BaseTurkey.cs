@@ -8,13 +8,15 @@ namespace PatternAdapter.Turkey
         private readonly IGobble _gobble;
         private readonly ISwim _swim;
         private readonly IWalk _walk;
+        private readonly IName _name;
 
-        protected BaseTurkey(IFly fly, IGobble gobble, ISwim swim, IWalk walk)
+        protected BaseTurkey(IFly fly, IGobble gobble, ISwim swim, IWalk walk, IName name)
         {
             _fly = fly;
             _gobble = gobble;
             _swim = swim;
             _walk = walk;
+            _name = name;
         }
 
         public void MakeFly()
@@ -37,12 +39,18 @@ namespace PatternAdapter.Turkey
             _walk.Walk();
         }
 
+        public virtual void ShowName()
+        {
+            _name.Name();
+        }
+
         public void ShowInfo()
         {
             _fly.Fly();
             _gobble.Gobble();
             _swim.Swim();
             _walk.Walk();
+            _name.Name();
         }
     }
 }
