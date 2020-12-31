@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PatternAdapter\PatternAdapter.csproj" />
+    <ProjectReference Include="..\PatternIterator\PatternIterator.csproj" />
+    <ProjectReference Include="..\PatternStrategy\PatternStrategy.csproj" />
+  </ItemGroup>
+
+</Project>
